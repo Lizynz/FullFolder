@@ -38,7 +38,9 @@
 
 %hook SBFolderBackgroundView
 
-/*- (id)initWithFrame:(CGRect)arg1 { // Dark background
+/*+ (CGSize)folderBackgroundSize {} // Size Folder
+
+- (id)initWithFrame:(CGRect)arg1 { // Dark background
 id view = %orig;
        [self setBackgroundColor:[UIColor colorWithWhite: 0.20 alpha:0.85]];
 return view;
